@@ -120,7 +120,7 @@ async function main(){
     // 第一个参数是目录页的url上数字，第二个参数是之前中断的位置
     const args = process.argv
     const fileindex = parseInt(args[2])
-    const startindex = parseInt(args[3])
+    const startindex = parseInt(args[3]) || 0
 
    await getByClass(`https://km.sankuai.com/page/${fileindex}`, startindex)
 
