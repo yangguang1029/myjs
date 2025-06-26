@@ -22,14 +22,6 @@ function _createClass(e, r, t) {
     writable: false
   }), e;
 }
-function _defineProperty(e, r, t) {
-  return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, {
-    value: t,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[r] = t, e;
-}
 function _getPrototypeOf(t) {
   return _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function (t) {
     return t.__proto__ || Object.getPrototypeOf(t);
@@ -73,7 +65,7 @@ function _toPrimitive(t, r) {
     if ("object" != typeof i) return i;
     throw new TypeError("@@toPrimitive must return a primitive value.");
   }
-  return ("string" === r ? String : Number)(t);
+  return (String )(t);
 }
 function _toPropertyKey(t) {
   var i = _toPrimitive(t, "string");
@@ -93,8 +85,5 @@ var MyRemoteComponent = /*#__PURE__*/function (_React$Component) {
     }
   }]);
 }(React.Component);
-_defineProperty(MyRemoteComponent, "propTypes", {
-  name: React.PropTypes.string
-});
 window.MyRemoteComponent = MyRemoteComponent;
 //# sourceMappingURL=index.js.map
